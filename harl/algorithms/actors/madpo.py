@@ -33,8 +33,6 @@ class MADPO(OnPolicyBase):
         self.div_coef = args["div_coef"]
         self.div_weight = args["div_weight"]
         self.sigma = args["sigma"]
-        self.gcsd_sigma = args["gcsd_sigma"]
-        self.print_loss = args["print_loss"]
 
     @staticmethod
     def unzip_sample_data(data):
@@ -258,10 +256,10 @@ class MADPO(OnPolicyBase):
                     advantages, self.actor_num_mini_batch, self.data_chunk_length
                 )
 
-            for sample, old_sample, pre_sample, pre_pre_sample in zip(data_generator, old_data_generator,
-                                                                      pre_data_generator, pre_pre_data_generator):
+            for sample, old_sample, pre_sample in zip(data_generator, old_data_generator,
+                                                                      pre_data_generator):
                 policy_loss, dist_entropy, actor_grad_norm, imp_weights = self.update_(
-                    sample, pre_sample, pre_pre_sample, pre_actor)
+                    sample, pre_sample, pre_actor)
 
                 train_info["policy_loss"] += policy_loss.item()
                 train_info["dist_entropy"] += dist_entropy.item()
