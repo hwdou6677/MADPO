@@ -7,7 +7,7 @@ This code is the official implementation of [MADPO](https://openreview.net/forum
 Please follow [HARL](https://github.com/PKU-MARL/HARL) to install algorithms and enviroment dependencies. 
 
 
-### Training on Existing Environments
+### Training Example
 
 ```shell
 for seed in $(seq 1 3)
