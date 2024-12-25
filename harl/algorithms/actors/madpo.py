@@ -9,7 +9,7 @@ from harl.utils.models_tools import get_grad_norm
 from harl.algorithms.actors.on_policy_base import OnPolicyBase
 from harl.utils.trpo_util import CCSD, update_model, flat_params
 from harl.utils.trpo_util import kl_approx as KL
-from harl.utils.multi_divergence import gcsd
+
 
 
 class MADPO(OnPolicyBase):
