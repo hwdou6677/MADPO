@@ -8,14 +8,11 @@ from harl.algorithms.actors.hasac import HASAC
 from harl.algorithms.actors.had3qn import HAD3QN
 from harl.algorithms.actors.maddpg import MADDPG
 from harl.algorithms.actors.mappo import MAPPO
-from harl.algorithms.actors.hatrpo_CS import HATRPO_CS
-from harl.algorithms.actors.matrpo import MATRPO
 from harl.algorithms.actors.madpo import MADPO
 
-# from harl.algorithms.actors.madac import MADAC
 
 ALGO_REGISTRY = {
-    "hatrpo_CS": HATRPO_CS,
+
     "happo": HAPPO,
     "hatrpo": HATRPO,
     "haa2c": HAA2C,
@@ -25,7 +22,6 @@ ALGO_REGISTRY = {
     "had3qn": HAD3QN,
     "maddpg": MADDPG,
     "mappo": MAPPO,
-    "matrpo": MATRPO,
     "madpo": MADPO,
-    # "madac": MADAC
+
 }
