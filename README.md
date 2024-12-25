@@ -2,6 +2,8 @@
 
 This code is the official implementation of [MADPO](https://openreview.net/forum?id=xvYI7TCiU6), "Measuring Mutual Policy Divergence for Multi-Agent Sequential Exploration", in NeurIPS 2024.
 
+This code is highly based on [HARL](https://github.com/PKU-MARL/HARL).
+
 ### Installation
 
 Please follow [HARL](https://github.com/PKU-MARL/HARL) to install dependencies of algorithms and enviroments. 
