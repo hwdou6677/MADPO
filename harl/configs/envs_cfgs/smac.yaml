@@ -1,0 +1,8 @@
+map_name: 3s5z_vs_3s6z
+state_type: FP # choose from FP (Feature Pruned) and EP (Environment Provided)
+
+#            5m_vs_6m  3s5z  3s5z_vs_3s6z
+# mappo
+# happo
+# hatrpo        ok
+# hatrpo_CS     ok
