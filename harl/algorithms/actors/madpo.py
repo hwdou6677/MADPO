@@ -30,7 +30,6 @@ class MADPO(OnPolicyBase):
         self.use_max_grad_norm = args["use_max_grad_norm"]
         self.max_grad_norm = args["max_grad_norm"]
         self.use_div = args["use_div"]
-        self.div_type = args["div_type"]
         self.div_coef = args["div_coef"]
         self.div_weight = args["div_weight"]
         self.sigma = args["sigma"]
